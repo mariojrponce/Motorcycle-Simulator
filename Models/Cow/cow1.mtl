@@ -1,0 +1,40 @@
+#
+# Wavefront material file: c:\users\malfatti\desktop\projeto agrotins\agrosim\exemplo 7\release\models\cow\cow1.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 03/29/2018 20:14:19
+#
+# Bounding box of geometry = (-13.4867,-13.0279,-22.3448) to (13.3727,21.1732,39.7614).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.0 0.0 0.0
+	Ks 0.0 0.0 0.0
+	Ka 0.0 0.0 0.0
+
+newmtl Unnamed01
+	Ns 2
+	d 1
+	illum 2
+	Kd 0.1 0.06 0
+	Ks 0.1 0.06 0
+	Ka 0.1 0.06 0
+
+newmtl Unnamed01_1
+	Ns 68
+	d 1
+	illum 2
+	Kd 0.0 0.0 0.0
+	Ks 1 1 1
+	Ka 0.0 0.0 0.0
+
+newmtl Unnamed01_2
+	Ns 7
+	d 1
+	illum 2
+	Kd 0.0 0.0 0.0
+	Ks 1 1 1
+	Ka 0.0 0.0 0.0
+

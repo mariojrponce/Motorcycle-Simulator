@@ -7,6 +7,7 @@
 
 #include "SceneMenu.h"
 #include "CVRManager.h"
+#include "SceneConfig.h"
 
 /***********************************************************
 *Name: SceneMenu()
@@ -139,7 +140,7 @@ bool SceneMenu::Init()
 	return true;
 }
 
-
+//valores da seleção do MENU
 int selecao = 1, selecaoAnterior = 1;
 
 
@@ -245,7 +246,7 @@ void SceneMenu::TrataMenu()
 			break;
 		case 5:
 			snd_clicks[0]->PlaySound();
-			 
+			
 			pManager->Exit();
 			break;
 		}

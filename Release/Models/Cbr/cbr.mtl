@@ -1,0 +1,105 @@
+#
+# Wavefront material file: C:\Temp\cbr.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 05/07/2018 13:27:27
+#
+# Bounding box of geometry = (-813.157,-421.823,-287.292) to (809.276,432.408,247.533).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl black_m
+	Ns 20
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 1.35 1.35 1.35
+	Ka 0 0 0
+
+newmtl blinker
+	Ns 20
+	d 1
+	illum 2
+	Kd 0.5451 0.5451 0.5451
+	Ks 1.35 1.35 1.35
+	Ka 0.5451 0.5451 0.5451
+
+newmtl body
+	Ns 50
+	d 1
+	illum 2
+	Kd 1 0 0
+	Ks 1.8 1.8 1.8
+	Ka 1 0 0
+
+newmtl chrome
+	Ns 20
+	d 1
+	illum 2
+	Kd 0.7098 0.7098 0.7098
+	Ks 1.35 1.35 1.35
+	Ka 0.7098 0.7098 0.7098
+
+newmtl dash
+	Ns 50
+	d 1
+	illum 2
+	Kd 0.4392 0.4392 0.4392
+	Ks 1.8 1.8 1.8
+	Ka 0.4392 0.4392 0.4392
+
+newmtl glass
+	Ns 20
+	d 0.1
+	illum 2
+	Kd 0.7098 0.7098 0.7098
+	Ks 1.35 1.35 1.35
+	Ka 0.7098 0.7098 0.7098
+
+newmtl gum
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.2118 0.2118 0.2118
+	Ks 0.27 0.27 0.27
+	Ka 0.2118 0.2118 0.2118
+
+newmtl plate
+	Ns 50
+	d 1
+	illum 2
+	Kd 0.4392 0.4392 0.4392
+	Ks 1.8 1.8 1.8
+	Ka 0.4392 0.4392 0.4392
+
+newmtl red_l
+	Ns 20
+	d 1
+	illum 2
+	Kd 1 0 0
+	Ks 1.35 1.35 1.35
+	Ka 1 0 0
+	map_refl -type sphere map__66_raytrace.tga
+
+newmtl silver
+	Ns 20
+	d 1
+	illum 2
+	Kd 0.5451 0.5451 0.5451
+	Ks 1.35 1.35 1.35
+	Ka 0.5451 0.5451 0.5451
+
+newmtl wheel
+	Ns 20
+	d 1
+	illum 2
+	Kd 0.9529 0.9529 0.9529
+	Ks 1.5 1.5 1.5
+	Ka 0.9529 0.9529 0.9529
+

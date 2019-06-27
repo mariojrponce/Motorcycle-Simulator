@@ -8,17 +8,19 @@
 #include "CVRManager.h"
 #include "CVRSprite.h"
 #include "CVRLoadingBar.h"
-
-#include "SceneConfig.h"
-
+#include "CVRFont.h"
 
 
+char textob[100]; CVRFont* font = NULL;//Texto tela Sprites
 
-char textob[100];
 float fScale = 1.0;
+
 float velocidade = 0.0f;//Define a velocidade padrão da Moto recebe 0
 float km = 0.0f;
 float direcionamento = 0.0f;//Define o direcionamento padrão da moto. Recebe o valor de 0
+
+
+
 
 /***********************************************************w
 *Name: SceneGame()
@@ -28,7 +30,7 @@ float direcionamento = 0.0f;//Define o direcionamento padrão da moto. Recebe o v
 ************************************************************/
 SceneGame::SceneGame()
 {
-	
+	motoSelecao = 0;
 }
 
 /***********************************************************
@@ -52,6 +54,8 @@ void SceneGame::Render()
 	glPopMatrix();
 }
 
+
+
 /***********************************************************
 *Name: SetMotoModel()
 *Description: configura a visualizacao da moto escolhida
@@ -67,6 +71,7 @@ void SceneGame::SetMotoModel(int motoModel)
 			spr_Motorcycle->SetPosition(0, -37, -64);
 			spr_Motorcycle->SetScale(0.62,0.62,0.62);
 			spr_Motorcycle->RotY(-90);
+			
 		break;
 
 		case 1:
@@ -81,6 +86,13 @@ void SceneGame::SetMotoModel(int motoModel)
 			spr_Motorcycle->SetPosition(-8, -253, -443);
 			spr_Motorcycle->SetScale(0.41,0.41,0.41);
 			spr_Motorcycle->RotY(-90);
+		break;
+
+		case 3:
+			spr_Motorcycle =  CreateObj("Tractor.obj","Models\\Tractor\\",false);
+			spr_Motorcycle->SetPosition(0, -150, -200);
+			spr_Motorcycle->SetScale(2.41,2.41,2.41);
+			spr_Motorcycle->RotY(90);
 		break;
 	}
 	
@@ -97,7 +109,7 @@ bool SceneGame::Init()
 {
 
 	//Configura o OpenGL
-	glClearColor(10.0f,50.0f,50.0f,100.5f);
+	glClearColor(0.0f,0.0f,0.0f,0.0f);
 	glEnable(GL_DEPTH_TEST);
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_NORMALIZE);
@@ -105,7 +117,7 @@ bool SceneGame::Init()
 	//Configura a cor do colorkey
 	pManager->cGraphicsManager.SetColorKey(255,0,255);
 
-	CreateObj("city_tex_night.obj","Models\\cidade\\",true);
+	spr_Cidade = CreateObj("city_tex_night.obj","Models\\cidade\\",true);
 
 	pManager->cView.SetSpeed(3000);
 	pManager->cView.SetPositionY(-2000);
@@ -148,20 +160,28 @@ bool SceneGame::Init()
 
 	//Sprite das marchas - NUMEROS
 	spriteMarchas = CreateSprite("Images\\numeroMarchas.bmp", 32,32, true);
-	spriteMarchas->AddAnimation(0, true, 7, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 1, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 2, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 3, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 4, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 5, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 6, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 7, 0,1,2,3,4,5,6);
 	spriteMarchas->SetCurrentAnimation(0);
 	spriteMarchas->SetPosXY(863,644);
 
 	
 	//Sprite dos LEDs indicadores (Vermelho) - Quando o conta giros atigir a velocidade máxima, o led acende.
 	spriteLedsVermelho = CreateSprite("Images\\luzesIndicadoras.bmp", 16,16, true);
-	spriteLedsVermelho->AddAnimation(1, true, 2, 0,1);
+	spriteLedsVermelho->AddAnimation(1, false, 1, 1);//Adiciona a primeira animação - Desligado
+	spriteLedsVermelho->AddAnimation(1, false, 1, 0);//Adiciona a segunda animação - Ligada.
+	spriteLedsVermelho->SetCurrentAnimation(1);//Seta a animação 1 como padrão
 	spriteLedsVermelho->SetPosXY(812, 682);
 
 
 	//Sprite do combustível - BASE
 	spriteCombustivel = CreateSprite("Images\\combustivel.bmp", 128,128, true);
-	spriteCombustivel->AddAnimation(1, true, 1, 0);
+	spriteCombustivel->AddAnimation(1, false, 1, 0);
 	spriteCombustivel->SetPosXY(940, 687);
 
 
@@ -174,44 +194,44 @@ bool SceneGame::Init()
 
 	//Sprite do icone de combustível
 	spriteIconeCombu = CreateSprite("Images\\iconeCombustivel.bmp", 32,32,true);
-	spriteIconeCombu->AddAnimation(1, true, 2, 0,1);
+	spriteIconeCombu->AddAnimation(1, false, 2, 0,1);
 	spriteIconeCombu->SetPosXY(912, 696);
 
 
 	//Sprite seta Esquerda 
 	spriteSetaEsq = CreateSprite("Images\\iconeSetaEsquerda.bmp", 16,16, true);
-	spriteSetaEsq->AddAnimation(1, true, 2, 0,1);
+	spriteSetaEsq->AddAnimation(1, false, 2, 0,1);
 	spriteSetaEsq->SetPosXY(843, 683);
 
 
 	//Sprite seta Direita
 	spriteSetaDir = CreateSprite("Images\\iconeSetaDireita.bmp", 16,16, true);
-	spriteSetaDir->AddAnimation(1, true, 2, 0,1);
+	spriteSetaDir->AddAnimation(1, false, 2, 0,1);
 	spriteSetaDir->SetPosXY(875, 683);
 
 
 	//Sprite de farol baixo
 	spriteFarolBaixo = CreateSprite("Images\\farolBaixo.bmp", 16,16, true);
-	spriteFarolBaixo->AddAnimation(1, true, 2, 0,1);
+	spriteFarolBaixo->AddAnimation(1, false, 2, 0,1);
 	spriteFarolBaixo->SetPosXY(844, 698);
 
 
 	//Sprite de fatol alto 
 	spriteFarolAlto = CreateSprite("Images\\farolAlto.bmp", 16,16, true);
-	spriteFarolAlto->AddAnimation(1, true, 2, 0,1);
+	spriteFarolAlto->AddAnimation(1, false, 2, 0,1);
 	spriteFarolAlto->SetPosXY(874, 698);
 
 
 	//Sprite do ICONE BATERIA 
 	spriteIconeBateria = CreateSprite("Images\\iconeBateria.bmp", 16,16, true);
-	spriteIconeBateria->AddAnimation(1, true, 2, 0,1);
+	spriteIconeBateria->AddAnimation(1, false, 2, 0,1);
 	spriteIconeBateria->SetPosXY(859, 713);
 
 	//Angulo da camera
 	fAngle = 0;
 
 	//Seleciona o modelo da moto
-	SetMotoModel(0);
+	SetMotoModel(motoSelecao);//Ele pega o valor que está armazenado na memoria. O nome da variável que seleciona: motoSelecao
 	
 
 	//Posicionamento do modelo Selecionado da moto.
@@ -231,7 +251,11 @@ bool SceneGame::Init()
 	sound->SetRepeat(-1);
 	sound->PlaySound(); 
 
+	//Para ver o valor selecinado
+	sprintf(textob,"agora vai - %d", motoSelecao);
 
+	font = this->CreateFont2D(textob, 30, true);
+	font->SetPosXY(100,100);
 
 	//Fim do método de carregamento
 	return true;
@@ -247,6 +271,46 @@ void SceneGame::Release()
 {
 	CVRScene::Release();
 }
+
+/***********************************************************
+*Name: PainelMarchas()
+*Description: altera o contator de marchas conforme a moto se desloca.
+*Params: Nenhum
+*Return: Nenhum
+************************************************************/
+void SceneGame::PainelMarchas()
+{
+	while (velocidade == 0)
+	{
+		spriteMarchas->SetCurrentAnimation(0);
+	}
+	if (velocidade == 0.1)
+	{
+		spriteMarchas->SetCurrentAnimation(1);
+	}
+	else if (velocidade == 0.4)
+	{
+		spriteMarchas->SetCurrentAnimation(2);
+	}
+	else if (velocidade == 0.8)
+	{
+		spriteMarchas->SetCurrentAnimation(3);
+	}
+	else if (velocidade == 1.0)
+	{
+		spriteMarchas->SetCurrentAnimation(4);
+	}
+	else if (velocidade == 1.4)
+	{
+		spriteMarchas->SetCurrentAnimation(5);
+	}
+	else if (velocidade == 1.8)
+	{
+		spriteMarchas->SetCurrentAnimation(6);
+	}
+}
+
+
 
 /***********************************************************
 *Name: MovimentaMoto()
@@ -266,8 +330,31 @@ void SceneGame::MovimentaMoto()
 	spriteAgulhaVelo->fAngle = -150 + (km*1.2f);
 
 	//Rotaciona a agulha do CONTA GIROS conforme a velocidade
-	spriteAgulhaGiros->fAngle = -145 + (velocidade*20.0f);
+	spriteAgulhaGiros->fAngle = -145 + (velocidade*20.0f); 
+	if(spriteAgulhaGiros->fAngle > 20)
+		{
+			spriteAgulhaGiros->fAngle = 20;
 
+			//Sprite dos LEDs indicadores (Vermelho) - Quando o conta giros atigir a velocidade máxima, o led acende.
+			if (spriteLedsVermelho->AnimationEnded())
+			{
+				spriteLedsVermelho->SetCurrentAnimation(1);
+				spriteLedsVermelho->ResetAnimation();
+			}
+		}
+	else
+		{
+				//Sprite dos LEDs indicadores (Vermelho) - Quando o conta giros atigir a velocidade máxima, o led acende.
+			if (spriteLedsVermelho->AnimationEnded())
+			{
+				spriteLedsVermelho->SetCurrentAnimation(0);
+				spriteLedsVermelho->ResetAnimation();
+			}
+		}
+
+
+	//Rotaciona a agulha do Combustivel
+	spriteAgulhaCombu->fAngle = 41;
 
 	//Se a tecla Up for apertada, ele entre nesta função
 	if (pManager->cInputManager.cStdInput.KeyDown(DIK_UP))
@@ -341,16 +428,6 @@ void SceneGame::MovimentaMoto()
 			direcionamento = 0.0f;
 		}
 	}
-	
-
-	
-	//SE A TECLA ESC FOR PRECIONADA, SAI DA CENA GAME. 
-	if (pManager->cInputManager.cStdInput.KeyReleased(DIK_ESCAPE))
-	{
-		pManager->SetCurrentScene(1);
-		sound->StopSound();//Pausa o som da moto
-		return;
-	}
 
 	pManager->cView.RotY(fAngle);
 }
@@ -364,70 +441,25 @@ void SceneGame::MovimentaMoto()
 void SceneGame::Execute()
 {
 	MovimentaMoto();
-
+	PainelMarchas();
 
 	//****************************MARIO - USE ESTE COMANDO PARA TESTAR E POSICIONAR O SPRITE NA TELA ATRAVES DAS TECLAS (A, W, D, X) PARA MOVIMENTAR
-	MovimentaSprite(spriteIconeBateria);
+	//MovimentaSprite(spriteIconeBateria);
 
-	//Movimentar o modelo da moto.
-	/*
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_UP))
-	{
-		spr_Scooter->vPos.z-= 1;
-	}	
+	//Mostrar a esfera mas não funciona.
+	//DrawBoundingSphere(spr_Cidade->vPos, spr_Cidade->vScale, 10);
 
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_DOWN))
-	{
-		spr_Scooter->vPos.z+= 1;
-	}	
+	//***Para movimentar o obj da motocicleta
+	//MovimentaModeloMoto();
 
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_LEFT))
-	{
-		spr_Scooter->vPos.x-= 1;
-	}	
-
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_RIGHT))
-	{
-		spr_Scooter->vPos.x+= 1;
-	}	
-
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_HOME))
-	{
-		spr_Scooter->vPos.y+= 1;
-	}	
-
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_END))
-	{
-		spr_Scooter->vPos.y-= 1;
-	}	
-
-	if (pManager->cInputManager.cStdInput.KeyPressed(DIK_ESCAPE))
-	{
-		pManager->SetCurrentScene(1);
-		return;
-	}
-
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_U))
-	{
-		fScale+=0.001;
-	}	
-
-	if (pManager->cInputManager.cStdInput.KeyDown(DIK_D))
-	{
-		fScale-=0.001;
-	}
-
-
+	//SE A TECLA ESC FOR PRECIONADA, SAI DA CENA GAME. 
 	if (pManager->cInputManager.cStdInput.KeyReleased(DIK_ESCAPE))
 	{
 		pManager->SetCurrentScene(1);
+		sound->StopSound();//Pausa o som da moto
 		return;
 	}
 
-	sprintf(textob,"%.2f %0.2f %2f %.2f", spr_Scooter->vPos.x, spr_Scooter->vPos.y, spr_Scooter->vPos.z, fScale);
-
-	posicao->SetText(textob);
-	*/
 }
 
 /***********************************************************
@@ -438,6 +470,7 @@ void SceneGame::Execute()
 ************************************************************/
 void SceneGame::MovimentaSprite(CVRSprite* sprite)
 {
+	/*
 	posicao->bVisible = true;
 
 	if (pManager->cInputManager.cStdInput.KeyDown(DIK_W))
@@ -462,4 +495,104 @@ void SceneGame::MovimentaSprite(CVRSprite* sprite)
 
 	sprintf(textob,"%.2f %0.2f %2f %.2f", sprite->fPosX, sprite->fPosY);
 	posicao->SetText(textob);
+	*/
 }
+
+/***********************************************************
+*Name: MovimentaModeloMoto() 
+*Description: utilizado para o posicionamento de modelo da moto
+*Params: Nenhum
+*Return: Nenhum
+************************************************************/
+void MovimentaModeloMoto(CVRObjLoader* spr_Scooter)
+{
+	/*
+	char textoMoto[100]; CVRFont* fontMoto = NULL;//Texto tela Modelo Moto
+
+	//Ficam em Inicializar
+	sprintf(textoMoto,"Moto: %.2f %0.2f %2f %.2f", spr_Motorcycle->vPos.x, spr_Motorcycle->vPos.y, spr_Motorcycle->vPos.z, fScale);
+	fontMoto = this->CreateFont2D(textoMoto, 30, true);
+	fontMoto->SetPosXY(400,100);
+	
+
+	//MOVIMENTAR MODELO MOTO (execute)
+	posicaoMoto->bVisible = true;
+	posicaoMoto->SetText(textoMoto);
+	
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_UP))
+	{
+		spr_Motorcycle->vPos.z-= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_DOWN))
+	{
+		spr_Motorcycle->vPos.z+= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_LEFT))
+	{
+		spr_Motorcycle->vPos.x-= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_RIGHT))
+	{
+		spr_Motorcycle->vPos.x+= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_HOME))
+	{
+		spr_Motorcycle->vPos.y+= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_END))
+	{
+		spr_Motorcycle->vPos.y-= 1;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_U))
+	{
+		fScale+=0.001;
+	}	
+
+	if (pManager->cInputManager.cStdInput.KeyDown(DIK_D))
+	{
+		fScale-=0.001;
+	}
+	*/
+	
+}
+
+
+/***********************************************************
+*Name: DrawBoundingSphere(CVRVector vPos, CVRVector vScale, float fRadius) 
+*Description: utilizado para o realizar a colisão
+*Params: Nenhum
+*Return: Nenhum
+************************************************************/
+void SceneGame::DrawBoundingSphere(CVRVector vPos, CVRVector vScale, float fRadius)
+{
+	/*
+	glPushAttrib(GL_CURRENT_BIT);
+	
+	if(pManager->cCollisionManager.BoxBoxCollision
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+	}
+	else
+	{
+		glColor3f(0.0f, 1.0f, 0.0f);
+	}
+
+	glPushMatrix();
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); 
+		glTranslatef(vPos.GetX(), vPos.GetY(), vPos.GetZ()); 
+		glScalef(vScale.GetX(),vScale.GetY(),vScale.GetZ()); 
+		auxSolidSphere(fRadius); 
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glPopMatrix();
+	glPopAttrib();
+	*/
+}
+
+

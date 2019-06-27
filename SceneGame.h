@@ -10,6 +10,9 @@
 #include "CVRScene.h"
 #include "CVRObjLoader.h"
 
+
+
+
 class SceneGame: public CVRScene
 {
 public:
@@ -22,18 +25,29 @@ public:
 	void SetMotoModel(int);
 	void MovimentaSprite(CVRSprite*);
 	void MovimentaMoto();
+	void DrawBoundingSphere(CVRVector vPos, CVRVector vScale, float fRadius);
+	bool TestCollision();
+	void MudaLedTest();
+	void PainelMarchas();
+
+	//Essa desgraça vai resolver nosso maldito problema
+	int motoSelecao;
+	
 	
 	
 private:
 	float fAngle;
 	CVRObjLoader* spr_Motorcycle;
+	CVRObjLoader* spr_Cidade;
 	CVRFont* posicao;
+	CVRFont* posicaoMoto;
 	CVRLoadingBar* barraCarregamento;
 	CVRSprite* spriteMarchas;
 	CVRSprite* spriteVelocimetro;
 	CVRSprite* spriteAgulhaVelo;
 	CVRSprite* spriteGiros;
 	CVRSprite* spriteAgulhaGiros;
+	CVRSprite* spriteLedsVermelhoOn;
 	CVRSprite* spriteLedsVermelho;
 	CVRSprite* spriteCombustivel;
 	CVRSprite* spriteAgulhaCombu;

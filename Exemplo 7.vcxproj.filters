@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Exemplo 7">
+      <UniqueIdentifier>{eb5de829-3220-4910-a377-40b4329728d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Motor Encima">
+      <UniqueIdentifier>{ddbd9dd7-b543-44f8-8f5e-6ffb7a7fdb3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Motor Encima\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Motor Encima\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Motor Encima\Scenes">
+      <UniqueIdentifier>{2c57fa1b-a1ce-4241-8a04-f992e67f4a60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CVRAnim.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRAOI.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRBillboard.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRBoundingBox.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRBoundingSphere.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRCollisionManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRFont.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRForceFeedbackManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRGraphicsManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRImage.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRInputManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRJoystick.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRListener.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRLoadingBar.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRLog.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRMath.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRMD2.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRMusic.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRObject.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRObject2D.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRObject3D.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRObjGeneric.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRObjLoader.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRQuad.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRScene.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSkyBox.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSkySphere.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSound.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSoundManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSprite.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRSTDInput.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRStructEffect.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRTerrain.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRTimeManager.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRTimer.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRVector.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRView.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVRWindow.h">
+      <Filter>Motor Encima\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGame.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLogo.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMenu.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneConfig.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSobre.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneAjuda.h">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CVRAnim.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRAOI.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRBillboard.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRBoundingBox.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRBoundingSphere.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRCollisionManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRFont.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRForceFeedbackManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRGraphicsManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRImage.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRInputManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRJoystick.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRListener.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRLoadingBar.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRLog.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRMath.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRMd2.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRMusic.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRObject.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRObject2D.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRObject3D.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRObjGeneric.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRObjLoader.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRQuad.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRScene.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSkyBox.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSkySphere.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSound.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSoundManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSprite.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRSTDInput.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRStructEffect.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRTerrain.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRTimeManager.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRTimer.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRVector.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRView.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVRWindow.cpp">
+      <Filter>Motor Encima\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Motor Encima</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGame.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLogo.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMenu.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneConfig.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSobre.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneAjuda.cpp">
+      <Filter>Motor Encima\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -9,12 +9,16 @@
 #include "CVRManager.h"
 #include "CVRTimer.h"
 #include "CVRSprite.h"
-#include "SceneGame.h"
+
+
+
 
 char texto[100];
 CVRSprite* spr_selecao1;
 CVRSprite* spr_selecao2;
 CVRSprite* spr_selecao3;
+
+
 
 /***********************************************************
 *Name: SceneConfig()
@@ -46,6 +50,7 @@ SceneConfig::~SceneConfig()
 ************************************************************/
 bool SceneConfig::Init()
 {
+	//BG padrão da cena Configuração
 	spr_backgroundConfig = CreateSprite("Images\\backgroundConfig.bmp",1024,768,true);
 	spr_backgroundConfig->SetPosX((float)(pManager->cMainWindow.lWindowWidth/2));
 	spr_backgroundConfig->SetPosY((float)(384));
@@ -53,6 +58,7 @@ bool SceneConfig::Init()
 	spr_backgroundConfig->SetCurrentAnimation(0);
 	spr_backgroundConfig->SetVisible(true);
 
+	//Sprite do que chama o BG para mostrar a seleção da moto.
 	spr_selectMoto1 = CreateSprite("Images\\selectMoto1.bmp", 1024,768, true);
 	spr_selectMoto1->SetPosX((float)(pManager->cMainWindow.lWindowWidth/2));
 	spr_selectMoto1->SetPosY((float)(384));
@@ -60,6 +66,7 @@ bool SceneConfig::Init()
 	spr_selectMoto1->SetCurrentAnimation(0);
 	spr_selectMoto1->SetVisible(false);
 
+	//Sprite do que chama o BG para mostrar a seleção da moto.
 	spr_selectMoto2 = CreateSprite("Images\\selectMoto2.bmp", 1024,768, true);
 	spr_selectMoto2->SetPosX((float)(pManager->cMainWindow.lWindowWidth/2));
 	spr_selectMoto2->SetPosY((float)(384));
@@ -67,6 +74,7 @@ bool SceneConfig::Init()
 	spr_selectMoto2->SetCurrentAnimation(0);
 	spr_selectMoto2->SetVisible(false);
 
+	//Sprite do que chama o BG para mostrar a seleção da moto.
 	spr_selectMoto3 = CreateSprite("Images\\selectMoto3.bmp", 1024,768, true);
 	spr_selectMoto3->SetPosX((float)(pManager->cMainWindow.lWindowWidth/2));
 	spr_selectMoto3->SetPosY((float)(384));
@@ -74,15 +82,19 @@ bool SceneConfig::Init()
 	spr_selectMoto3->SetCurrentAnimation(0);
 	spr_selectMoto3->SetVisible(false);
 
+	//Create OBJ da moto 0
 	spr_Scooter = CreateObj("Scooter.obj","Models\\Scooter\\",true);
 	spr_Scooter->SetPosition(-180, 120, -740);
 
+	//Create OBJ da moto 1
 	spr_Custom = CreateObj("Custom.obj","Models\\Custom\\",true);
 	spr_Custom->SetPosition(-9110, -2680, -38260);
 
+	//Create OBJ da moto 2
 	spr_Cbr = CreateObj("Cbr.obj","Models\\Cbr\\",true);
 	spr_Cbr->SetPosition(-1759, -2215, -7157);
 
+	//Velocidade de rotação da moto
 	pManager->cView.SetSpeed(500);
 
 	//Posição da fonte que informa as cordenadas do Sprite selecionado
@@ -90,19 +102,21 @@ bool SceneConfig::Init()
 	posicao->SetPosXY(500, 200);
 	posicao->bVisible = false;
 	
-
+	//Importação de sprites Transparentes para o reconhecimento da seleção.
 	spr_selecao1 = CreateSprite("Images\\SelecaoMoto.bmp", 256,128, true);
 	spr_selecao1->AddAnimation(15, true, 1, 7);
 	spr_selecao1->SetPosXY(212,237);
 	spr_selecao1->SetCurrentAnimation(0);
 	spr_selecao1->SetVisible(false);
 
+	//Importação de sprites Transparentes para o reconhecimento da seleção.
 	spr_selecao2 = CreateSprite("Images\\SelecaoMoto.bmp", 256,128, true);
 	spr_selecao2->AddAnimation(15, true, 1, 7);
 	spr_selecao2->SetPosXY(212,448);
 	spr_selecao2->SetCurrentAnimation(0);
 	spr_selecao2->SetVisible(false);
 
+	//Importação de sprites Transparentes para o reconhecimento da seleção.
 	spr_selecao3 = CreateSprite("Images\\SelecaoMoto.bmp", 256,128, true);
 	spr_selecao3->AddAnimation(15, true, 1,7);
 	spr_selecao3->SetPosXY(212,661);
@@ -111,6 +125,7 @@ bool SceneConfig::Init()
 
 	fAngle = 0;
 
+	//Sprite do mouse que é criado na cena Config
 	spr_mouse[0] = CreateSprite("Images\\MouseUp.bmp",32,16,true);
 	spr_mouse[0]->AddAnimation(1,true,1,0);
 	spr_mouse[1] = CreateSprite("Images\\MouseDown.bmp",32,16,true);
@@ -142,6 +157,7 @@ void SceneConfig::Release()
 {
 	CVRScene::Release();
 }
+
 
 /***********************************************************
 *Name: Execute()
@@ -278,27 +294,30 @@ void SceneConfig::TrataConfig()
 			spr_selecao1->SetVisible(false);
 			spr_selectMoto1->SetVisible(true);
 			//ação da seleção moto 1
-
+			*vrMotoSelecao = 0;
 			this->pManager->SetCurrentScene(2);
 			break;
 		case 2:
 			spr_selecao2->SetVisible(false);
 			spr_selectMoto2->SetVisible(true);
-			//ação da seleçao moto 2
-
+			//ação da seleçao moto 2	
+			*vrMotoSelecao = 1;
 			this->pManager->SetCurrentScene(2);
 			break;
 		case 3:
 			spr_selecao3->SetVisible(false);
 			spr_selectMoto3->SetVisible(true);
 			//ação da seleção moto 3
-
+			*vrMotoSelecao = 2;
 			this->pManager->SetCurrentScene(2);
 			break;
 		}
 	}
+	sprintf(texto,"%d",*vrMotoSelecao);
+	posicao->SetText(texto);
 
 }
+
 
 /***********************************************************
 *Name: MovimentaSprite() 

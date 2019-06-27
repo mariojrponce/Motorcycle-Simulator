@@ -1,0 +1,174 @@
+#
+# Wavefront material file: C:\Users\silva\AgroSim\Exemplo 7\Release\Models\cidade\city_tex_night.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 04/09/2018 13:04:46
+#
+# Bounding box of geometry = (-110985,1054.3,-112199) to (111294,16534.1,108246).
+
+newmtl wall01
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.588 0.588 0.588
+	Ks 0.9 0.9 0.9
+	Ka 0.588 0.588 0.588
+
+newmtl white01
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.502 0.6314 0.6902
+	Ks 0.9 0.9 0.9
+	Ka 0 0 0
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl build01
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.502 0.498 0.498
+	map_Kd win_01.bmp
+	map_Ka win_01.bmp
+
+newmtl build02
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_02.bmp
+	map_Ka win_02.bmp
+
+newmtl build03
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_03.bmp
+	map_Ka win_03.bmp
+
+newmtl build04
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_04.bmp
+	map_Ka win_04.bmp
+
+newmtl build05
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_05.bmp
+	map_Ka win_05.bmp
+
+newmtl build05b
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_052.bmp
+	map_Ka win_052.bmp
+
+newmtl build06
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_06.bmp
+	map_Ka win_06.bmp
+
+newmtl build07
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_07.bmp
+	map_Ka win_07.bmp
+
+newmtl build08
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_08.bmp
+	map_Ka win_08.bmp
+
+newmtl build09
+	Ns 2
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.5882 0.5882 0.5882
+	map_Kd win_09.bmp
+	map_Ka win_09.bmp
+
+newmtl lamps_glass
+	Ns 36
+	d 1
+	illum 2
+	Kd 1 0.9176 0.7373
+	Ks 1 0.9176 0.7373
+	Ka 1 0.9176 0.7373
+
+newmtl lamps_metal
+	Ns 36
+	d 1
+	illum 2
+	Kd 0.2118 0.2627 0.302
+	Ks 0.9 0.9 0.9
+	Ka 0.2118 0.2627 0.302
+
+newmtl metal01
+	Ns 12
+	d 1
+	illum 2
+	Kd 0.4392 0.4392 0.4392
+	Ks 0.9 0.9 0.9
+	Ka 0 0 0
+
+newmtl roads
+	Ns 4
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.588 0.588 0.588
+	map_Kd roads.bmp
+	map_Ka roads.bmp
+
+newmtl tree5
+	Ns 4
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.9 0.9 0.9
+	Ka 0.588 0.588 0.588
+

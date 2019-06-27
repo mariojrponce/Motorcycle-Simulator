@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="Exemplo 7"
+	ProjectGUID="{794BE49F-400A-4158-B8CF-B8A3EF9EDE2B}"
+	RootNamespace="Exemplo7"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib"
+				LinkIncremental="2"
+				IgnoreDefaultLibraryNames="LIBC.lib"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Exemplo 7"
+			>
+			<File
+				RelativePath=".\Main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneGame.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneGame.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneLogo.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneLogo.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneMenu.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SceneMenu.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Motor Encima"
+			>
+			<Filter
+				Name="Header Files"
+				Filter="h;hpp;hxx;hm;inl;inc;xsd"
+				UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+				>
+				<File
+					RelativePath="..\..\Motor Encima\CVRAnim.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRAOI.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBillboard.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBoundingBox.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBoundingSphere.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRCollisionManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRFont.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRForceFeedbackManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRGraphicsManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRImage.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRInputManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRJoystick.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRListener.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRLoadingBar.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRLog.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMath.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMD2.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMusic.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject2D.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject3D.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObjGeneric.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObjLoader.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRQuad.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRScene.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSkyBox.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSkySphere.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSound.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSoundManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSprite.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSTDInput.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRStructEffect.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTerrain.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTimeManager.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTimer.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRVector.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRView.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRWindow.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Source Files"
+				Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+				UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+				>
+				<File
+					RelativePath="..\..\Motor Encima\CVRAnim.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRAOI.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBillboard.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBoundingBox.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRBoundingSphere.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRCollisionManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRFont.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRForceFeedbackManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRGraphicsManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRImage.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRInputManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRJoystick.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRListener.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRLoadingBar.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRLog.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMath.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMd2.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRMusic.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject2D.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObject3D.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObjGeneric.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRObjLoader.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRQuad.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRScene.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSkyBox.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSkySphere.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSound.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSoundManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSprite.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRSTDInput.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRStructEffect.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTerrain.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTimeManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRTimer.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRVector.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRView.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Motor Encima\CVRWindow.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

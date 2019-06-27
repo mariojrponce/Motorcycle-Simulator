@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Exemplo 7">
+</Property><Property Name="Solution File" Value="C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.sln">
+</Property><Property Name="User Options File" Value="C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.suo">
+</Property><Property Name="Date" Value="terça-feira, 26 de setembro de 2017">
+</Property><Property Name="Time" Value="17:42">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Exemplo 7.sln" Description="File successfully backed up as C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Exemplo 7.suo" Description="File successfully backed up as C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.suo.old">
+</Event><Event ErrorLevel="0" Project="Exemplo 7" Source="Exemplo 7.vcproj" Description="Converting project file 'C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Exemplo 7" Source="Exemplo 7.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Exemplo 7" Source="Exemplo 7.vcproj" Description="Done converting to new project file 'C:\Users\silva\AgroSim\Exemplo 7\Exemplo 7.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Exemplo 7" Source="Exemplo 7.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Exemplo 7.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Exemplo 7.sln" Description="Converted">
+</Event></UpgradeLog>

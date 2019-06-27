@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CVRAnim.h" />
+    <ClInclude Include="CVRAOI.h" />
+    <ClInclude Include="CVRBillboard.h" />
+    <ClInclude Include="CVRBoundingBox.h" />
+    <ClInclude Include="CVRBoundingSphere.h" />
+    <ClInclude Include="CVRCollisionManager.h" />
+    <ClInclude Include="CVRFont.h" />
+    <ClInclude Include="CVRForceFeedbackManager.h" />
+    <ClInclude Include="CVRGraphicsManager.h" />
+    <ClInclude Include="CVRImage.h" />
+    <ClInclude Include="CVRInputManager.h" />
+    <ClInclude Include="CVRJoystick.h" />
+    <ClInclude Include="CVRListener.h" />
+    <ClInclude Include="CVRLoadingBar.h" />
+    <ClInclude Include="CVRLog.h" />
+    <ClInclude Include="CVRManager.h" />
+    <ClInclude Include="CVRMath.h" />
+    <ClInclude Include="CVRMD2.h" />
+    <ClInclude Include="CVRMusic.h" />
+    <ClInclude Include="CVRObject.h" />
+    <ClInclude Include="CVRObject2D.h" />
+    <ClInclude Include="CVRObject3D.h" />
+    <ClInclude Include="CVRObjGeneric.h" />
+    <ClInclude Include="CVRObjLoader.h" />
+    <ClInclude Include="CVRQuad.h" />
+    <ClInclude Include="CVRScene.h" />
+    <ClInclude Include="CVRSkyBox.h" />
+    <ClInclude Include="CVRSkySphere.h" />
+    <ClInclude Include="CVRSound.h" />
+    <ClInclude Include="CVRSoundManager.h" />
+    <ClInclude Include="CVRSprite.h" />
+    <ClInclude Include="CVRSTDInput.h" />
+    <ClInclude Include="CVRStructEffect.h" />
+    <ClInclude Include="CVRTerrain.h" />
+    <ClInclude Include="CVRTimeManager.h" />
+    <ClInclude Include="CVRTimer.h" />
+    <ClInclude Include="CVRVector.h" />
+    <ClInclude Include="CVRView.h" />
+    <ClInclude Include="CVRWindow.h" />
+    <ClInclude Include="SceneAjuda.h" />
+    <ClInclude Include="SceneConfig.h" />
+    <ClInclude Include="SceneGame.h" />
+    <ClInclude Include="SceneLogo.h" />
+    <ClInclude Include="SceneMenu.h" />
+    <ClInclude Include="SceneSobre.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CVRAnim.cpp" />
+    <ClCompile Include="CVRAOI.cpp" />
+    <ClCompile Include="CVRBillboard.cpp" />
+    <ClCompile Include="CVRBoundingBox.cpp" />
+    <ClCompile Include="CVRBoundingSphere.cpp" />
+    <ClCompile Include="CVRCollisionManager.cpp" />
+    <ClCompile Include="CVRFont.cpp" />
+    <ClCompile Include="CVRForceFeedbackManager.cpp" />
+    <ClCompile Include="CVRGraphicsManager.cpp" />
+    <ClCompile Include="CVRImage.cpp" />
+    <ClCompile Include="CVRInputManager.cpp" />
+    <ClCompile Include="CVRJoystick.cpp" />
+    <ClCompile Include="CVRListener.cpp" />
+    <ClCompile Include="CVRLoadingBar.cpp" />
+    <ClCompile Include="CVRLog.cpp" />
+    <ClCompile Include="CVRManager.cpp" />
+    <ClCompile Include="CVRMath.cpp" />
+    <ClCompile Include="CVRMd2.cpp" />
+    <ClCompile Include="CVRMusic.cpp" />
+    <ClCompile Include="CVRObject.cpp" />
+    <ClCompile Include="CVRObject2D.cpp" />
+    <ClCompile Include="CVRObject3D.cpp" />
+    <ClCompile Include="CVRObjGeneric.cpp" />
+    <ClCompile Include="CVRObjLoader.cpp" />
+    <ClCompile Include="CVRQuad.cpp" />
+    <ClCompile Include="CVRScene.cpp" />
+    <ClCompile Include="CVRSkyBox.cpp" />
+    <ClCompile Include="CVRSkySphere.cpp" />
+    <ClCompile Include="CVRSound.cpp" />
+    <ClCompile Include="CVRSoundManager.cpp" />
+    <ClCompile Include="CVRSprite.cpp" />
+    <ClCompile Include="CVRSTDInput.cpp" />
+    <ClCompile Include="CVRStructEffect.cpp" />
+    <ClCompile Include="CVRTerrain.cpp" />
+    <ClCompile Include="CVRTimeManager.cpp" />
+    <ClCompile Include="CVRTimer.cpp" />
+    <ClCompile Include="CVRVector.cpp" />
+    <ClCompile Include="CVRView.cpp" />
+    <ClCompile Include="CVRWindow.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SceneAjuda.cpp" />
+    <ClCompile Include="SceneConfig.cpp" />
+    <ClCompile Include="SceneGame.cpp" />
+    <ClCompile Include="SceneLogo.cpp" />
+    <ClCompile Include="SceneMenu.cpp" />
+    <ClCompile Include="SceneSobre.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{794BE49F-400A-4158-B8CF-B8A3EF9EDE2B}</ProjectGuid>
+    <RootNamespace>Exemplo7</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Include;C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Directx\Include;C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Motor Encima;C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Lib;C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Directx\Lib\x86;C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Libs;$(LibraryPath)</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Motor Encima;$(SourcePath)</SourcePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Include;C:\Users\MarioPonceJr\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Directx\Include;C:\Users\MarioPonceJr\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Lib;C:\Users\MarioPonceJr\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Libs;C:\Users\MarioPonceJr\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Material auxiliar\Directx\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;jpeg.lib;glaux.lib;dinput8.lib;dxguid.lib;dsound.lib;wsock32.lib;wiiuse.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;jpeg.lib;glaux.lib;dinput8.lib;dxguid.lib;dsound.lib;wsock32.lib;wiiuse.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,107 @@
+#
+# Wavefront material file: c:\users\malfatti\desktop\projeto agrotins\agrosim\exemplo 7\release\models\house\housef.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 03/30/2018 04:14:01
+#
+# Bounding box of geometry = (-16.9007,-0.061183,-16.6355) to (16.0676,24.1908,14.9118).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl Exported_windowsDoors1_plastic_white_plastic_whiteSG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.95 0.95 0.95
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl blinn2SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.31 0.31 0.33
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl blinn3SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl cloth_terracotta_cloth_terracottaSG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.75 0.68 0.64
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl initialShadingGroup
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.5 0.5 0.5
+	Ks 0.7 0.7 0.7
+	Ka 0 0 0
+
+newmtl lambert2SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+	map_Kd 063.bmp
+
+newmtl lambert3SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+	map_Kd campiangatebrick1.bmp
+
+newmtl lambert4SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl lambert5SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+	map_Kd pantiles_1024_more_red.bmp
+
+newmtl lambert6SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.94 0.93 1
+	Ks 0.5 0.5 0.5
+	Ka 0 0 0
+
+newmtl phong1SG
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.1 0.15 0.09
+	Ks 0.55 0.55 0.55
+	Ka 0 0 0
+

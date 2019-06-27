@@ -13,6 +13,7 @@
 #include "CVRFont.h"
 
 
+
 class SceneConfig: public CVRScene
 {
 public:
@@ -24,7 +25,10 @@ public:
 	void UpdateMouse();
 	void TrataConfig();
 	void MovimentaSprite(CVRSprite*);
-	
+
+	//Ponteiros sao o inferno, mas resolvem
+	int* vrMotoSelecao;
+
 	
 private:
 	CVRSprite* spr_backgroundConfig;

@@ -1,0 +1,98 @@
+﻿Build started 22/02/2019 16:11:03.
+     1>Project "C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Exemplo 7.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Exemplo 7.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CVRAOI.cpp CVRAnim.cpp CVRBillboard.cpp CVRBoundingBox.cpp CVRBoundingSphere.cpp CVRCollisionManager.cpp CVRFont.cpp CVRGraphicsManager.cpp CVRImage.cpp CVRInputManager.cpp CVRListener.cpp CVRLoadingBar.cpp CVRManager.cpp CVRMath.cpp CVRMd2.cpp CVRMusic.cpp CVRObjGeneric.cpp CVRObjLoader.cpp CVRObject.cpp CVRObject2D.cpp CVRObject3D.cpp CVRQuad.cpp CVRSTDInput.cpp CVRScene.cpp CVRSkyBox.cpp CVRSkySphere.cpp CVRSound.cpp CVRSoundManager.cpp CVRSprite.cpp CVRTerrain.cpp CVRTimeManager.cpp CVRTimer.cpp CVRVector.cpp CVRView.cpp CVRWindow.cpp Main.cpp SceneConfig.cpp SceneGame.cpp SceneLogo.cpp SceneMenu.cpp SceneSobre.cpp
+         SceneSobre.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         SceneMenu.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         SceneLogo.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         SceneGame.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         SceneConfig.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         Main.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRWindow.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRView.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRVector.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRTimer.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRTimeManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRTerrain.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSprite.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSoundManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSound.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSkySphere.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSkyBox.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRScene.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRSTDInput.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRQuad.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         Generating Code...
+         Compiling...
+         CVRObject3D.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRObject2D.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRObject.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRObjLoader.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRObjGeneric.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRMusic.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRMd2.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRMath.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRLoadingBar.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRListener.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRInputManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRImage.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRGraphicsManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRFont.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRCollisionManager.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRBoundingSphere.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRBoundingBox.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRBillboard.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         CVRAnim.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         Generating Code...
+         Compiling...
+         CVRAOI.cpp
+     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\cvrobject.h(14): fatal error C1083: Cannot open include file: 'glaux.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Exemplo 7.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:25.61

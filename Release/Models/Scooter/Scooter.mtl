@@ -1,0 +1,224 @@
+#
+# Wavefront material file: C:\Temp\Scooter.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 05/04/2018 13:03:34
+#
+# Bounding box of geometry = (-80.117,-39.2319,-27.9035) to (81.3983,41.8163,27.6448).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl 02___Default
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.3216 0.3216 0.3216
+	Ks 0.324 0.324 0.324
+	Ka 0.3216 0.3216 0.3216
+
+newmtl 03___Default
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.7569 0.7569 0.7569
+	Ks 0.414 0.414 0.414
+	Ka 0.7569 0.7569 0.7569
+
+newmtl 04___Default
+	Ns 16
+	d 1
+	illum 2
+	Kd 1 0.5216 0.051
+	Ks 0.711 0.711 0.711
+	Ka 1 0.5216 0.051
+
+newmtl 05___Default
+	Ns 8
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.76 0.76 0.76
+	Ka 0 0 0
+
+newmtl 06___Default
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.5882 0.5882 0.5882
+	Ks 0 0 0
+	Ka 0.5882 0.5882 0.5882
+
+newmtl 08___Default
+	Ns 10
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0 0 0
+	Ka 0 0 0
+
+newmtl 10___Default
+	Ns 10
+	d 1
+	illum 2
+	Kd 1 0 0
+	Ks 0 0 0
+	Ka 1 0 0
+
+newmtl Metal_ChromeFast
+	Ns 17
+	d 1
+	illum 2
+	Kd 0.7333 0.6784 0.5333
+	Ks 0.32 0.32 0.32
+	Ka 0.7333 0.6784 0.5333
+
+newmtl Metal_Galvanized
+	Ns 17
+	d 1
+	illum 2
+	Kd 0.7843 0.7843 0.7843
+	Ks 0.864 0.864 0.864
+	Ka 0.7843 0.7843 0.7843
+
+newmtl Standard_1
+	Ns 80
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.498 0.498 0.498
+	Ka 1 1 1
+
+newmtl Standard_10
+	Ns 35
+	d 1
+	illum 2
+	Kd 0.5294 0.5294 0.5294
+	Ks 0.7633 0.7633 0.7633
+	Ka 0.5294 0.5294 0.5294
+
+newmtl Standard_11
+	Ns 100
+	d 0.5
+	illum 2
+	Kd 1 0.851 0.3961
+	Ks 0.498 0.498 0.498
+	Ka 1 0.851 0.3961
+
+newmtl Standard_2
+	Ns 16
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.7723 0.7723 0.7723
+	Ka 0 0 0
+
+newmtl Standard_4
+	Ns 37
+	d 1
+	illum 2
+	Kd 0.8627 0.5098 0
+	Ks 0.6376 0.6376 0.6376
+	Ka 0.8627 0.5098 0
+
+newmtl Standard_7
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.0392 0.0392 0.0392
+	Ks 0.5658 0.5658 0.5658
+	Ka 0.0392 0.0392 0.0392
+
+newmtl Standard_9
+	Ns 40
+	d 1
+	illum 2
+	Kd 0.6706 0 0
+	Ks 1.0776 1.0776 1.0776
+	Ka 0.6706 0 0
+
+newmtl buellbla5
+	Ns 11
+	d 1
+	illum 2
+	Kd 0.1451 0.1451 0.1451
+	Ks 0.2694 0.2694 0.2694
+	Ka 0.0706 0.0706 0.0706
+
+newmtl buellpklstc3
+	Ns 17
+	d 1
+	illum 2
+	Kd 0.2275 0.2275 0.2275
+	Ks 0.449 0.449 0.449
+	Ka 0.0902 0.0902 0.0902
+
+newmtl buellsru
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.2118 0.2118 0.2118
+	Ks 0.3502 0.3502 0.3502
+	Ka 0.0706 0.0706 0.0706
+
+newmtl buellsru2
+	Ns 40
+	d 1
+	illum 2
+	Kd 0.8549 0.8549 0.8549
+	Ks 0.5 0.5 0.5
+	Ka 0.2588 0.2588 0.2588
+
+newmtl wire_055055055
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.2157 0.2157 0.2157
+	Ks 0.35 0.35 0.35
+	Ka 0.2157 0.2157 0.2157
+
+newmtl wire_077077077
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.302 0.302 0.302
+	Ks 0.35 0.35 0.35
+	Ka 0.302 0.302 0.302
+
+newmtl wire_186186186
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.7294 0.7294 0.7294
+	Ks 0.35 0.35 0.35
+	Ka 0.7294 0.7294 0.7294
+
+newmtl wire_224086086
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.8784 0.3373 0.3373
+	Ks 0.35 0.35 0.35
+	Ka 0.8784 0.3373 0.3373
+
+newmtl wire_224198087
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.8784 0.7765 0.3412
+	Ks 0.35 0.35 0.35
+	Ka 0.8784 0.7765 0.3412
+
+newmtl wire_255255255
+	Ns 32
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.35 0.35 0.35
+	Ka 1 1 1
+
