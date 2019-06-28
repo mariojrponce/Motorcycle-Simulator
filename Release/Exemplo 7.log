@@ -1,39 +1,181 @@
-﻿Build started 03/06/2019 20:15:45.
-     1>Project "C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Exemplo 7.vcxproj" on node 2 (build target(s)).
+﻿Build started 28/06/2019 17:55:19.
+     1>Project "C:\Users\Mario\Motorcycle-Simulator\Exemplo 7.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\Exemplo 7.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CVRAnim.cpp CVRGraphicsManager.cpp CVRInputManager.cpp CVRManager.cpp CVRObject3D.cpp CVRSTDInput.cpp CVRScene.cpp CVRSprite.cpp CVRView.cpp Main.cpp SceneAjuda.cpp SceneConfig.cpp SceneGame.cpp SceneLogo.cpp SceneMenu.cpp SceneSobre.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CVRAnim.cpp CVRAOI.cpp CVRBillboard.cpp CVRBoundingBox.cpp CVRBoundingSphere.cpp CVRCollisionManager.cpp CVRFont.cpp CVRForceFeedbackManager.cpp CVRGraphicsManager.cpp CVRImage.cpp CVRInputManager.cpp CVRJoystick.cpp CVRListener.cpp CVRLoadingBar.cpp CVRLog.cpp CVRManager.cpp CVRMath.cpp CVRMd2.cpp CVRMusic.cpp CVRObject.cpp CVRObject2D.cpp CVRObject3D.cpp CVRObjGeneric.cpp CVRObjLoader.cpp CVRQuad.cpp CVRScene.cpp CVRSkyBox.cpp CVRSkySphere.cpp CVRSound.cpp CVRSoundManager.cpp CVRSprite.cpp CVRSTDInput.cpp CVRStructEffect.cpp CVRTerrain.cpp CVRTimeManager.cpp CVRTimer.cpp CVRVector.cpp CVRView.cpp CVRWindow.cpp Main.cpp SceneAjuda.cpp SceneConfig.cpp SceneGame.cpp SceneLogo.cpp SceneMenu.cpp SceneSobre.cpp
          CVRAnim.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRAOI.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRBillboard.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRBoundingBox.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRBoundingSphere.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRCollisionManager.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRFont.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>CVRFont.cpp(31): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRFont.cpp(51): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRFont.cpp(108): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         CVRForceFeedbackManager.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          CVRGraphicsManager.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>CVRGraphicsManager.cpp(84): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
      1>CVRGraphicsManager.cpp(303): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         CVRImage.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>CVRImage.cpp(117): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(183): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRImage.cpp(205): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(297): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRImage.cpp(323): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(429): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRImage.cpp(476): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRImage.cpp(509): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(573): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRImage.cpp(605): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(606): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRImage.cpp(752): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
          CVRInputManager.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRJoystick.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRListener.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRLoadingBar.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRLog.cpp
          CVRManager.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRMath.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRMd2.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>CVRMd2.cpp(123): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         CVRMusic.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRObject.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Compiling...
+         CVRObject2D.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          CVRObject3D.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         CVRSTDInput.cpp
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRObjGeneric.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRObjLoader.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>CVRObjLoader.cpp(25): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRObjLoader.cpp(62): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRObjLoader.cpp(142): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRObjLoader.cpp(159): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(160): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(166): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(167): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(208): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(221): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(234): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(254): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(255): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(259): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(263): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(269): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(270): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(274): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(277): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(283): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(284): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(288): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(290): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(197) : see declaration of 'strtok'
+     1>CVRObjLoader.cpp(371): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRObjLoader.cpp(374): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>CVRObjLoader.cpp(393): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(402): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(407): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(412): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(417): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(424): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>CVRObjLoader.cpp(425): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>CVRObjLoader.cpp(575): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         CVRQuad.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          CVRScene.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>CVRScene.cpp(77): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         CVRSkyBox.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRSkySphere.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRSound.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRSoundManager.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          CVRSprite.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>CVRSprite.cpp(253): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
      1>CVRSprite.cpp(253): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
      1>CVRSprite.cpp(256): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
@@ -42,27 +184,47 @@
      1>CVRSprite.cpp(259): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
      1>CVRSprite.cpp(262): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
      1>CVRSprite.cpp(262): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+         CVRSTDInput.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRStructEffect.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRTerrain.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRTimeManager.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRTimer.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRVector.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          CVRView.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         CVRWindow.cpp
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>CVRWindow.cpp(95): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>CVRWindow.cpp(292): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
          Main.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\SceneAjuda.h(14): warning C4005: 'QTDBUTTONS' : macro redefinition
-                 c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\SceneMenu.h(12) : see previous definition of 'QTDBUTTONS'
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\mario\motorcycle-simulator\SceneAjuda.h(14): warning C4005: 'QTDBUTTONS' : macro redefinition
+                 c:\users\mario\motorcycle-simulator\SceneMenu.h(12) : see previous definition of 'QTDBUTTONS'
+         Compiling...
          SceneAjuda.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          SceneConfig.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>SceneConfig.cpp(316): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
      1>SceneConfig.cpp(352): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
          SceneGame.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
@@ -81,20 +243,20 @@
      1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(255): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
      1>SceneGame.cpp(386): warning C4305: '-=' : truncation from 'double' to 'float'
      1>SceneGame.cpp(410): warning C4305: '+=' : truncation from 'double' to 'float'
          SceneLogo.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          SceneMenu.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          SceneSobre.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\arquivosonedrive\onedrive - a.catolica-to.edu.br\projeto de pesquisa\agrosim\exemplo 7\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Release\Exemplo 7.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Exemplo 7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Release\Exemplo 7.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Release\Exemplo 7.lib" /MACHINE:X86 Release\CVRAnim.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Exemplo 7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.lib" /MACHINE:X86 Release\CVRAnim.obj
          Release\CVRAOI.obj
          Release\CVRBillboard.obj
          Release\CVRBoundingBox.obj
@@ -142,14 +304,14 @@
          Release\SceneSobre.obj
          Generating code
          Finished generating code
-         Exemplo 7.vcxproj -> C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Release\Exemplo 7.exe
+         Exemplo 7.vcxproj -> C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Release\Exemplo 7.exe;#1" /manifest "Release\Exemplo 7.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe;#1" /manifest "Release\Exemplo 7.exe.intermediate.manifest"
        FinalizeBuildStatus:
          Deleting file "Release\Exemplo 7.unsuccessfulbuild".
          Touching "Release\Exemplo 7.lastbuildstate".
-     1>Done Building Project "C:\ArquivosOneDrive\OneDrive - a.catolica-to.edu.br\PROJETO DE PESQUISA\AgroSim\Exemplo 7\Exemplo 7.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Mario\Motorcycle-Simulator\Exemplo 7.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:13.91
+Time Elapsed 00:00:34.60
