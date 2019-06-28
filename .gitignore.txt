@@ -1,1 +1,5 @@
-/.ipch
+/ipch
+/_UpgradeReport_Files
+/Debug
+/Billboards
+
