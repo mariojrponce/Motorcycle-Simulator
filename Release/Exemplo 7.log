@@ -1,12 +1,12 @@
-﻿Build started 28/06/2019 18:42:39.
-     1>Project "C:\Users\Mario\Motorcycle-Simulator\Exemplo 7.vcxproj" on node 2 (build target(s)).
+﻿Build started 28/06/2019 21:39:13.
+     1>Project "C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Exemplo 7.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\Exemplo 7.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SceneGame.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SceneGame.cpp
          SceneGame.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-         c:\users\mario\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         c:\users\mario ponce jr\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
@@ -25,11 +25,11 @@
      1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>SceneGame.cpp(255): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
      1>SceneGame.cpp(386): warning C4305: '-=' : truncation from 'double' to 'float'
      1>SceneGame.cpp(410): warning C4305: '+=' : truncation from 'double' to 'float'
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Exemplo 7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.lib" /MACHINE:X86 Release\CVRAnim.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Exemplo 7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.lib" /MACHINE:X86 Release\CVRAnim.obj
          Release\CVRAOI.obj
          Release\CVRBillboard.obj
          Release\CVRBoundingBox.obj
@@ -77,14 +77,14 @@
          Release\SceneSobre.obj
          Generating code
          Finished generating code
-         Exemplo 7.vcxproj -> C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe
+         Exemplo 7.vcxproj -> C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Mario\Motorcycle-Simulator\Release\Exemplo 7.exe;#1" /manifest "Release\Exemplo 7.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.exe;#1" /manifest "Release\Exemplo 7.exe.intermediate.manifest"
        FinalizeBuildStatus:
          Deleting file "Release\Exemplo 7.unsuccessfulbuild".
          Touching "Release\Exemplo 7.lastbuildstate".
-     1>Done Building Project "C:\Users\Mario\Motorcycle-Simulator\Exemplo 7.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Exemplo 7.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.10
+Time Elapsed 00:00:03.46

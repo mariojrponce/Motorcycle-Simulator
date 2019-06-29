@@ -441,7 +441,6 @@ void SceneGame::MovimentaMoto()
 void SceneGame::Execute()
 {
 	MovimentaMoto();
-	PainelMarchas();
 
 	//****************************MARIO - USE ESTE COMANDO PARA TESTAR E POSICIONAR O SPRITE NA TELA ATRAVES DAS TECLAS (A, W, D, X) PARA MOVIMENTAR
 	//MovimentaSprite(spriteIconeBateria);
