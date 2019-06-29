@@ -1,9 +1,5 @@
 # Motorcycle Simulator
-Este simulador foi desenvolvido por alunos do curso de Sistemas de Informação, em um projeto de Iniciação Científica da Faculdade Católica do Tocantins.  O objetivo deste jogo é a utilização da tecnologia de Realidade Virtual para o treinamento de motociclistas. Permitido assim que os candidatos ao exame nacional de habilitação a categoria “A” tenham mais experiencias antes de conduzir o veículo nas ruas. 
-
-**Sumário**
-
-[TOC]
+Este simulador foi desenvolvido por alunos do curso de Sistemas de Informação, em um projeto de Iniciação Científica da Universidade Católica do Tocantins.  O objetivo deste jogo é a utilização da tecnologia de Realidade Virtual para o treinamento de motociclistas. Permitido assim que os candidatos ao exame nacional de habilitação a categoria “A” tenham mais experiencias antes de conduzir o veículo nas ruas. 
 
 ###Requisitos Motorcycle Simulator
 * Microsoft Visual C++ 2010 Express
@@ -50,5 +46,6 @@ Este simulador foi desenvolvido por alunos do curso de Sistemas de Informação,
 	
 
 ###Como executar o jogo?
-1. Abra a pasta "Release"
-1. Execute o arquivo "Exemplo 7.exe"
+- Abra a pasta "Release"
+
+- Execute o arquivo "Exemplo 7.exe"
