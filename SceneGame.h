@@ -27,7 +27,6 @@ public:
 	void MovimentaMoto();
 	void DrawBoundingSphere(CVRVector vPos, CVRVector vScale, float fRadius);
 	bool TestCollision();
-	void MudaLedTest();
 	void PainelMarchas();
 
 	//Essa desgraça vai resolver nosso maldito problema

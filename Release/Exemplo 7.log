@@ -1,4 +1,4 @@
-﻿Build started 28/06/2019 23:34:00.
+﻿Build started 02/07/2019 01:33:42.
      1>Project "C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Exemplo 7.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\Exemplo 7.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -7,27 +7,27 @@
          SceneGame.cpp
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          c:\users\mario ponce jr\motorcycle-simulator\CVRForceFeedbackManager.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(72): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(80): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(80): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(80): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(87): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(87): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(87): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(94): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(94): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(94): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(130): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(157): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(157): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(192): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(255): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>SceneGame.cpp(70): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(70): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(70): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(78): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(78): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(78): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(85): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(85): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(85): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(92): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(92): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(92): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(128): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(155): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(155): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(190): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(190): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>SceneGame.cpp(386): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>SceneGame.cpp(410): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(417): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>SceneGame.cpp(441): warning C4305: '+=' : truncation from 'double' to 'float'
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib jpeg.lib glaux.lib dinput8.lib dxguid.lib dsound.lib wsock32.lib wiiuse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Exemplo 7.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mario Ponce Jr\Motorcycle-Simulator\Release\Exemplo 7.lib" /MACHINE:X86 Release\CVRAnim.obj
          Release\CVRAOI.obj
@@ -87,4 +87,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.13
+Time Elapsed 00:00:03.17

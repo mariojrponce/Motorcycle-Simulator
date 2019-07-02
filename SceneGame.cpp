@@ -15,14 +15,12 @@ char textob[100]; CVRFont* font = NULL;//Texto tela Sprites
 
 float fScale = 1.0;
 
+//Atributos de movimentação
 float velocidade = 0.0f;//Define a velocidade padrão da Moto recebe 0
 float km = 0.0f;
 float direcionamento = 0.0f;//Define o direcionamento padrão da moto. Recebe o valor de 0
 
-
-
-
-/***********************************************************w
+/***********************************************************
 *Name: SceneGame()
 *Description: construtor da classe
 *Params: Nenhum
@@ -160,13 +158,13 @@ bool SceneGame::Init()
 
 	//Sprite das marchas - NUMEROS
 	spriteMarchas = CreateSprite("Images\\numeroMarchas.bmp", 32,32, true);
-	spriteMarchas->AddAnimation(1, false, 1, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 2, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 3, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 4, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 5, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 6, 0,1,2,3,4,5,6);
-	spriteMarchas->AddAnimation(1, false, 7, 0,1,2,3,4,5,6);
+	spriteMarchas->AddAnimation(1, false, 1, 0);
+	spriteMarchas->AddAnimation(1, false, 1, 1);
+	spriteMarchas->AddAnimation(1, false, 1, 2);
+	spriteMarchas->AddAnimation(1, false, 1, 3);
+	spriteMarchas->AddAnimation(1, false, 1, 4);
+	spriteMarchas->AddAnimation(1, false, 1, 5);
+	spriteMarchas->AddAnimation(1, false, 1, 6);
 	spriteMarchas->SetCurrentAnimation(0);
 	spriteMarchas->SetPosXY(863,644);
 
@@ -252,7 +250,7 @@ bool SceneGame::Init()
 	sound->PlaySound(); 
 
 	//Para ver o valor selecinado
-	sprintf(textob,"agora vai - %d", motoSelecao);
+	sprintf(textob,"Moto selecionada - %d", motoSelecao);
 
 	font = this->CreateFont2D(textob, 30, true);
 	font->SetPosXY(100,100);
@@ -274,42 +272,73 @@ void SceneGame::Release()
 
 /***********************************************************
 *Name: PainelMarchas()
-*Description: altera o contator de marchas conforme a moto se desloca.
+*Description: Mostra qual marcha a moto está
 *Params: Nenhum
 *Return: Nenhum
 ************************************************************/
 void SceneGame::PainelMarchas()
 {
-	while (velocidade == 0)
+	//variavel que recebe a velocidade atual
+	float indicaMarchas = velocidade;
+
+	//Verificações do valor indicamarchas
+	//Se for menor que 0 a marcha é neutra
+	if(indicaMarchas <= 0.5f)
 	{
-		spriteMarchas->SetCurrentAnimation(0);
+		if (spriteMarchas->AnimationEnded()){
+			spriteMarchas->SetCurrentAnimation(0);//Animação NEUTRO
+			spriteMarchas->ResetAnimation();
+		}
 	}
-	if (velocidade == 0.1)
+	//se for menor que 4, é a primeira marcha
+	if(indicaMarchas < 4)
 	{
-		spriteMarchas->SetCurrentAnimation(1);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(1);//Animação PRIMEIRA
+		spriteMarchas->ResetAnimation();
+		}
 	}
-	else if (velocidade == 0.4)
+	//se for menor que 8 é a segunda marcha
+	if(indicaMarchas < 8)
 	{
-		spriteMarchas->SetCurrentAnimation(2);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(2);//Animação SEGUNDA
+		spriteMarchas->ResetAnimation();
+		}
 	}
-	else if (velocidade == 0.8)
+	//se for menor que 12 é a terceira marcha
+	if(indicaMarchas < 12)
 	{
-		spriteMarchas->SetCurrentAnimation(3);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(3);//Animação TERCEIRA
+		spriteMarchas->ResetAnimation();
+		}
 	}
-	else if (velocidade == 1.0)
+	//se for menor que 16 é a quarta marcha
+	if(indicaMarchas < 16)
 	{
-		spriteMarchas->SetCurrentAnimation(4);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(4);//Animação QUARTA
+		spriteMarchas->ResetAnimation();
+		}
 	}
-	else if (velocidade == 1.4)
+	//se for menor que 20 é a quinta marcha
+	if(indicaMarchas < 20)
 	{
-		spriteMarchas->SetCurrentAnimation(5);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(5);//Animação QUINTA
+		spriteMarchas->ResetAnimation();
+		}
 	}
-	else if (velocidade == 1.8)
+	//se for menor que 24 é a sexta marcha
+	if(indicaMarchas < 24)
 	{
-		spriteMarchas->SetCurrentAnimation(6);
+		if (spriteMarchas->AnimationEnded()){
+		spriteMarchas->SetCurrentAnimation(6);//Animação SEXTA
+		spriteMarchas->ResetAnimation();
+		}
 	}
 }
-
 
 
 /***********************************************************
@@ -320,6 +349,8 @@ void SceneGame::PainelMarchas()
 ************************************************************/
 void SceneGame::MovimentaMoto()
 {
+
+
 	//Define a velocidade da moto
 	km = velocidade * 8.25f; 
 
@@ -441,6 +472,8 @@ void SceneGame::MovimentaMoto()
 void SceneGame::Execute()
 {
 	MovimentaMoto();
+	PainelMarchas();
+
 
 	//****************************MARIO - USE ESTE COMANDO PARA TESTAR E POSICIONAR O SPRITE NA TELA ATRAVES DAS TECLAS (A, W, D, X) PARA MOVIMENTAR
 	//MovimentaSprite(spriteIconeBateria);

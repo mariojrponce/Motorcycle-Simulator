@@ -2,4 +2,4 @@
 /_UpgradeReport_Files
 /Debug
 /Billboards
-
+/.tmp.drivedownload
