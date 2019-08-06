@@ -10,7 +10,6 @@
 #include "CVRLoadingBar.h"
 #include "CVRFont.h"
 
-
 char textob[100]; CVRFont* font = NULL;//Texto tela Sprites
 
 float fScale = 1.0;
@@ -29,6 +28,7 @@ float direcionamento = 0.0f;//Define o direcionamento padrão da moto. Recebe o v
 SceneGame::SceneGame()
 {
 	motoSelecao = 0;
+	//teste git//teste git//teste git
 }
 
 /***********************************************************
@@ -349,7 +349,6 @@ void SceneGame::PainelMarchas()
 ************************************************************/
 void SceneGame::MovimentaMoto()
 {
-
 
 	//Define a velocidade da moto
 	km = velocidade * 8.25f; 
